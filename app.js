@@ -49,7 +49,12 @@ passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
-app.use(cors({ origin: "http://localhost:3000", credentials: true }));
+app.use(
+  cors({
+    origin: ["http://localhost:3000", "http://146.190.8.76/"],
+    credentials: true,
+  }),
+);
 // app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
