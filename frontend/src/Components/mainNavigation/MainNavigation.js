@@ -130,9 +130,7 @@ const MainNavigation = () => {
                   <div className="d-flex align-items-center">
                     <span className="mr-2">Welcome,</span>
                     <Link className="nav-link" to={userData ? "/profile" : "/"}>
-                      {() => {
-                        getFirstTwoWords(userData.name);
-                      }}
+                      {getFirstTwoWords(userData.name)}
                     </Link>
                   </div>
                 </li>

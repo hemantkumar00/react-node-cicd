@@ -22,7 +22,7 @@ export const GlobalStateProvider = ({ children }) => {
     async function loadInitialUser() {
       setLoading(true);
       try {
-        const response = await axios.get(`${API}/user`, {
+        const response = await axios.get(`/user`, {
           withCredentials: true,
         });
         const userDataFromApi = response.data;
