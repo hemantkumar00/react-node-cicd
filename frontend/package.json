@@ -44,5 +44,6 @@
       "last 1 safari version"
     ]
   },
+  "homepage": "http://146.190.8.76/app",
   "proxy": "http://localhost:8000"
 }
