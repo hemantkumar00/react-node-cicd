@@ -8,7 +8,6 @@ import React, {
 } from "react";
 import { toast } from "react-toastify";
 import LoadingSpinner from "./LoadingSpinner";
-import { API } from "./API";
 
 const GlobalStateContext = createContext();
 
